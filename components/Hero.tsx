@@ -25,10 +25,10 @@ export function Hero() {
         <div className="mb-6 flex items-center justify-between">
           <div className="inline-flex items-center gap-2 border border-archive-border bg-archive-panel px-2.5 py-1 text-xs font-mono text-archive-rust">
             <span className="h-1.5 w-1.5 bg-archive-rust"></span>
-            SECTION 01 // ARCHIVAL PROFILE MANIFESTO
+            ABOUT // PROFILE
           </div>
           <div className="font-mono text-xs text-archive-subtle hidden sm:block">
-            ID: RIZAL_SWIKEY_ARCHIVE
+            SOFTWARE ENGINEER & PRODUCT DESIGNER
           </div>
         </div>
 
@@ -57,7 +57,7 @@ export function Hero() {
               className="border-l-2 border-archive-rust pl-4 sm:pl-6 py-1"
             >
               <p className="font-editorial italic text-xl sm:text-2xl text-archive-parchment/90">
-                &ldquo;Software failure rarely stems from missing code. It stems from unchecked assumptions, dissonant interaction models, and fragile systemic foundations.&rdquo;
+                &ldquo;Great software combines thoughtful interface design, rigorous testing, and reliable engineering.&rdquo;
               </p>
             </motion.div>
 
@@ -69,9 +69,7 @@ export function Hero() {
               className="space-y-4 text-archive-muted text-sm sm:text-base leading-relaxed font-sans"
             >
               <p>
-                Operating at the confluence of <strong className="text-archive-parchment font-medium">Human-Centered Product Design</strong>,{" "}
-                <strong className="text-archive-parchment font-medium">Empirical Quality Assurance (QA)</strong>, and{" "}
-                <strong className="text-archive-parchment font-medium">Full-Stack Precision Engineering</strong>. Building high-resilience web platforms with zero-drift logic and verified digital accessibility.
+                Information Systems graduate from University of Brawijaya with hands-on experience in modern frontend development, UI/UX design, and quality assurance testing. Focused on building responsive, accessible web applications with clean architecture and solid code quality.
               </p>
             </motion.div>
 
@@ -87,7 +85,7 @@ export function Hero() {
                 className="inline-flex items-center gap-2 border border-archive-rust bg-archive-rust px-4 py-2.5 text-white hover:bg-archive-rust/90 transition-all shadow-sm"
               >
                 <Mail className="h-4 w-4" />
-                <span>DISPATCH TRANSMISSION</span>
+                <span>GET IN TOUCH</span>
                 <ArrowUpRight className="h-3 w-3" />
               </a>
 
@@ -98,7 +96,7 @@ export function Hero() {
                 className="inline-flex items-center gap-2 border border-archive-border bg-archive-panel px-4 py-2.5 text-archive-parchment hover:border-archive-parchment/40 transition-colors"
               >
                 <GithubIcon className="h-4 w-4 text-archive-muted" />
-                <span>GITHUB REPOSITORIES</span>
+                <span>GITHUB</span>
               </a>
 
               <a
@@ -108,7 +106,7 @@ export function Hero() {
                 className="inline-flex items-center gap-2 border border-archive-border bg-archive-panel px-4 py-2.5 text-archive-parchment hover:border-archive-parchment/40 transition-colors"
               >
                 <LinkedinIcon className="h-4 w-4 text-archive-muted" />
-                <span>LINKEDIN DOSSIER</span>
+                <span>LINKEDIN</span>
               </a>
             </motion.div>
           </div>
@@ -122,7 +120,7 @@ export function Hero() {
               className="border border-archive-border bg-archive-panel p-5 font-mono text-xs space-y-4"
             >
               <div className="flex items-center justify-between border-b border-archive-border pb-3">
-                <span className="text-archive-muted">[CREDENTIAL_LEDGER]</span>
+                <span className="text-archive-muted">[PROFILE OVERVIEW]</span>
                 <span className="text-archive-rust font-semibold">VERIFIED</span>
               </div>
 
@@ -130,7 +128,7 @@ export function Hero() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-archive-parchment font-semibold">
                   <GraduationCap className="h-4 w-4 text-archive-rust" />
-                  <span>ACADEMIC FOUNDATION</span>
+                  <span>EDUCATION</span>
                 </div>
                 <div className="text-archive-parchment">
                   {profile.education.degree}
@@ -148,7 +146,7 @@ export function Hero() {
               {/* Thesis Specification */}
               <div className="border-t border-archive-border pt-3 space-y-1">
                 <span className="text-archive-subtle block text-[10px] uppercase">
-                  DEFENDED THESIS RESEARCH:
+                  UNDERGRADUATE THESIS:
                 </span>
                 <p className="text-archive-parchment text-[11px] leading-snug">
                   {profile.education.thesis.title}
@@ -161,7 +159,7 @@ export function Hero() {
               {/* Status Beacon */}
               <div className="border-t border-archive-border pt-3 space-y-2">
                 <span className="text-archive-subtle block text-[10px] uppercase">
-                  CURRENT AVAILABILITY STATUS:
+                  AVAILABILITY:
                 </span>
                 <div className="flex items-start gap-2 bg-archive-obsidian/70 p-2.5 border border-archive-border">
                   <span className="mt-1 h-2 w-2 rounded-full bg-archive-beacon flex-shrink-0 animate-pulse"></span>
@@ -177,17 +175,17 @@ export function Hero() {
               <div className="border border-archive-border bg-archive-panel/80 p-2.5 text-center">
                 <Palette className="h-4 w-4 text-archive-rust mx-auto mb-1" />
                 <span className="text-archive-parchment font-medium block">UI/UX</span>
-                <span className="text-archive-subtle text-[10px]">Ergonomics</span>
+                <span className="text-archive-subtle text-[10px]">Figma & Design</span>
               </div>
               <div className="border border-archive-border bg-archive-panel/80 p-2.5 text-center">
                 <ShieldCheck className="h-4 w-4 text-archive-beacon mx-auto mb-1" />
-                <span className="text-archive-parchment font-medium block">QA AUDIT</span>
-                <span className="text-archive-subtle text-[10px]">Diskominfo</span>
+                <span className="text-archive-parchment font-medium block">QA TESTING</span>
+                <span className="text-archive-subtle text-[10px]">Manual & Auto</span>
               </div>
               <div className="border border-archive-border bg-archive-panel/80 p-2.5 text-center">
                 <Terminal className="h-4 w-4 text-archive-rust mx-auto mb-1" />
-                <span className="text-archive-parchment font-medium block">STACK</span>
-                <span className="text-archive-subtle text-[10px]">Next + Laravel</span>
+                <span className="text-archive-parchment font-medium block">FULL STACK</span>
+                <span className="text-archive-subtle text-[10px]">TS, React & PHP</span>
               </div>
             </div>
           </div>

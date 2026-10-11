@@ -29,16 +29,16 @@ export function ProjectExhibition() {
           <div>
             <div className="inline-flex items-center gap-2 border border-archive-border bg-archive-panel px-2.5 py-1 text-xs font-mono text-archive-rust mb-3">
               <span className="h-1.5 w-1.5 bg-archive-rust"></span>
-              SECTION 02 // CURATED ARTIFACT EXHIBITION
+              FEATURED PROJECTS
             </div>
             <h2 className="font-editorial text-3xl sm:text-5xl font-normal text-archive-parchment">
-              Verified Production Artifacts
+              Selected Projects
             </h2>
           </div>
           <div className="font-mono text-xs text-archive-muted text-right">
-            <span>INDEX: 03 SELECTED SYSTEMS</span>
+            <span>3 SELECTED WORKS</span>
             <br />
-            <span className="text-archive-subtle">ARCHIVAL DISPATCH: 2024–2026</span>
+            <span className="text-archive-subtle">2024 – PRESENT</span>
           </div>
         </div>
 
@@ -53,7 +53,7 @@ export function ProjectExhibition() {
           {/* Top Archival Ribbon */}
           <div className="flex flex-wrap items-center justify-between border-b border-archive-border bg-archive-surface px-4 py-2 font-mono text-xs text-archive-muted">
             <div className="flex items-center gap-2">
-              <span className="text-archive-rust font-bold">ARTIFACT 01</span>
+              <span className="text-archive-rust font-bold">PROJECT 01</span>
               <span>//</span>
               <span className="uppercase text-archive-parchment">{kacaPutih.archetype}</span>
             </div>
@@ -78,7 +78,7 @@ export function ProjectExhibition() {
                   Cafe & Kitchen — Bunulrejo, Malang
                 </div>
                 <div className="border-t border-b border-archive-border py-3 my-3 font-serif text-sm text-archive-parchment/80 leading-relaxed italic">
-                  &ldquo;Harmonizing localized artisanal culinary heritage with clean sub-second digital storefront ergonomics.&rdquo;
+                  &ldquo;A modern digital storefront and menu platform designed for fast page loads, clear typography, and seamless mobile experience.&rdquo;
                 </div>
                 <div className="flex items-center justify-between font-mono text-xs pt-2">
                   <span className="text-archive-muted">ISR CACHING:</span>
@@ -142,7 +142,7 @@ export function ProjectExhibition() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border border-archive-rust bg-archive-rust px-4 py-2.5 text-white hover:bg-archive-rust/90 transition-colors shadow-sm"
                 >
-                  <span>LAUNCH LIVE VERCEL SITE</span>
+                  <span>VIEW LIVE SITE</span>
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
                 <a
@@ -152,7 +152,7 @@ export function ProjectExhibition() {
                   className="inline-flex items-center gap-2 border border-archive-border bg-archive-obsidian px-4 py-2.5 text-archive-parchment hover:border-archive-parchment/40 transition-colors"
                 >
                   <GithubIcon className="h-4 w-4 text-archive-muted" />
-                  <span>SOURCE CODE (GH)</span>
+                  <span>SOURCE CODE</span>
                 </a>
               </div>
             </div>
@@ -170,17 +170,16 @@ export function ProjectExhibition() {
           {/* Top Archival Ribbon */}
           <div className="flex flex-wrap items-center justify-between border-b border-archive-border bg-archive-surface px-4 py-2 font-mono text-xs text-archive-muted">
             <div className="flex items-center gap-2">
-              <span className="text-archive-rust font-bold">ARTIFACT 02</span>
+              <span className="text-archive-rust font-bold">PROJECT 02</span>
               <span>//</span>
               <span className="uppercase text-archive-parchment">{initiaMate.archetype}</span>
             </div>
             <div className="flex items-center gap-3">
               <span>LOC: {initiaMate.location}</span>
               <span className="text-archive-subtle">|</span>
-              <span className="text-archive-parchment font-medium">HEADLESS AUTOMATION</span>
+              <span className="text-archive-parchment font-medium">AUTOMATION TOOLING</span>
             </div>
           </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 lg:p-8 items-center">
             {/* Terminal Preview Interface */}
             <div className="lg:col-span-6 font-mono text-xs space-y-3">
@@ -268,7 +267,7 @@ export function ProjectExhibition() {
                   className="inline-flex items-center gap-2 border border-archive-rust bg-archive-rust px-4 py-2.5 text-white hover:bg-archive-rust/90 transition-colors shadow-sm"
                 >
                   <Terminal className="h-3.5 w-3.5" />
-                  <span>INSPECT TOOLING ON GITHUB</span>
+                  <span>VIEW ON GITHUB</span>
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>
@@ -287,7 +286,7 @@ export function ProjectExhibition() {
           {/* Top Archival Ribbon */}
           <div className="flex flex-wrap items-center justify-between border-b border-archive-border bg-archive-surface px-4 py-2 font-mono text-xs text-archive-muted">
             <div className="flex items-center gap-2">
-              <span className="text-archive-rust font-bold">ARTIFACT 03</span>
+              <span className="text-archive-rust font-bold">PROJECT 03</span>
               <span>//</span>
               <span className="uppercase text-archive-parchment">{umkmAccounting.archetype}</span>
             </div>
@@ -394,7 +393,7 @@ export function ProjectExhibition() {
                   className="inline-flex items-center gap-2 border border-archive-rust bg-archive-rust px-4 py-2.5 text-white hover:bg-archive-rust/90 transition-colors shadow-sm"
                 >
                   <Calculator className="h-3.5 w-3.5" />
-                  <span>PREVIEW LEDGER DEMO</span>
+                  <span>VIEW DEMO</span>
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
                 <a
@@ -404,7 +403,7 @@ export function ProjectExhibition() {
                   className="inline-flex items-center gap-2 border border-archive-border bg-archive-obsidian px-4 py-2.5 text-archive-parchment hover:border-archive-parchment/40 transition-colors"
                 >
                   <GithubIcon className="h-4 w-4 text-archive-muted" />
-                  <span>SOURCE CODE (GH)</span>
+                  <span>SOURCE CODE</span>
                 </a>
               </div>
             </div>

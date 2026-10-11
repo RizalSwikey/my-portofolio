@@ -46,7 +46,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1.5">
               <Clock className="h-3 w-3 text-archive-muted" />
-              <span>STATION TIME:</span>
+              <span>LOCAL TIME:</span>
               <span className="font-semibold text-archive-parchment">
                 {localTime || "12:00:00"} WIB
               </span>
@@ -80,7 +80,7 @@ export function Header() {
             </span>
           </a>
           <span className="text-xs text-archive-subtle font-mono hidden sm:inline">
-            // REV 2026.10
+            // PORTFOLIO
           </span>
         </div>
 
@@ -90,25 +90,25 @@ export function Header() {
             href="#hero"
             className="px-2 py-1 text-archive-muted hover:text-archive-parchment hover:bg-archive-panel transition-colors"
           >
-            [01.MANIFESTO]
+            About
           </a>
           <a
             href="#exhibition"
             className="px-2 py-1 text-archive-muted hover:text-archive-parchment hover:bg-archive-panel transition-colors"
           >
-            [02.EXHIBITION]
+            Projects
           </a>
           <a
             href="#matrix"
             className="px-2 py-1 text-archive-muted hover:text-archive-parchment hover:bg-archive-panel transition-colors"
           >
-            [03.MATRIX]
+            Skills
           </a>
           <a
             href="#timeline"
             className="px-2 py-1 text-archive-muted hover:text-archive-parchment hover:bg-archive-panel transition-colors hidden md:inline"
           >
-            [04.TIMELINE]
+            Experience
           </a>
           <a
             href={profile.links.github}
@@ -116,7 +116,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="ml-2 border border-archive-rust/40 bg-archive-rust/10 px-2.5 py-1 text-archive-rust hover:bg-archive-rust hover:text-white transition-all font-mono"
           >
-            GH://RizalSwikey
+            GitHub
           </a>
         </nav>
       </div>

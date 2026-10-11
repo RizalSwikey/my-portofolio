@@ -15,16 +15,16 @@ export function ExperienceTimeline() {
           <div>
             <div className="inline-flex items-center gap-2 border border-archive-border bg-archive-panel px-2.5 py-1 text-xs font-mono text-archive-rust mb-3">
               <span className="h-1.5 w-1.5 bg-archive-rust"></span>
-              SECTION 04 // EXPERIENCE TIMELINE & ARCHIVAL LEDGER
+              EXPERIENCE // ROLES
             </div>
             <h2 className="font-editorial text-3xl sm:text-5xl font-normal text-archive-parchment">
-              Operational Engagements
+              Work Experience & Internships
             </h2>
           </div>
           <div className="font-mono text-xs text-archive-muted text-right">
-            <span>FORMAT: ARCHIVAL AUDIT LOG</span>
+            <span>PUBLIC SECTOR & INDUSTRY</span>
             <br />
-            <span className="text-archive-subtle">GOVERNMENT, INDUSTRY & NON-PROFIT</span>
+            <span className="text-archive-subtle">AUDITED ROLES & DELIVERABLES</span>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export function ExperienceTimeline() {
               <div className="flex flex-wrap items-center justify-between border-b border-archive-border bg-archive-surface px-4 py-2 font-mono text-xs text-archive-muted">
                 <div className="flex items-center gap-2">
                   <span className="text-archive-rust font-bold">
-                    LOG_ENTRY 0{idx + 1}
+                    ROLE 0{idx + 1}
                   </span>
                   <span>//</span>
                   <span className="text-archive-parchment">{exp.period.toUpperCase()}</span>
@@ -74,7 +74,7 @@ export function ExperienceTimeline() {
                 {/* Right: Audited Focus Points */}
                 <div className="lg:col-span-7">
                   <span className="font-mono text-[11px] uppercase tracking-wider text-archive-subtle block mb-3">
-                    AUDITED WORKFLOW DELIVERABLES & RESPONSIBILITIES:
+                    KEY RESPONSIBILITIES & CONTRIBUTIONS:
                   </span>
                   <ul className="space-y-2.5 font-sans text-sm text-archive-muted">
                     {exp.focus.map((item, itemIdx) => (

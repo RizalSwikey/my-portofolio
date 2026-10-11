@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rizal Akbar Syah Fauzan Putra — Archival Editorial × Precision Instrument",
+  title: "Rizal Akbar Syah Fauzan Putra — Software Engineer & Product Designer",
   description:
-    "Portfolio of Rizal Akbar Syah Fauzan Putra (@RizalSwikey). Human-Centered Design × Rigorous QA × Precision Engineering. Malang, Indonesia (UTC+07:00).",
+    "Personal portfolio of Rizal Akbar Syah Fauzan Putra. Software Engineer and UI/UX Designer with experience in frontend development, QA testing, and full-stack systems.",
   authors: [{ name: "Rizal Akbar Syah Fauzan Putra", url: "https://github.com/RizalSwikey" }],
   keywords: [
     "Rizal Akbar Syah Fauzan Putra",
@@ -17,8 +17,9 @@ export const metadata: Metadata = {
     "Malang",
   ],
   openGraph: {
-    title: "Rizal Akbar Syah Fauzan Putra — Archival Editorial × Precision Instrument",
-    description: "Human-Centered Design × Rigorous QA × Precision Engineering",
+    title: "Rizal Akbar Syah Fauzan Putra — Software Engineer & Product Designer",
+    description:
+      "Personal portfolio of Rizal Akbar Syah Fauzan Putra. Software Engineer and UI/UX Designer based in Malang, Indonesia.",
     url: "https://portfolio.rizalswikey.com",
     siteName: "Rizal Akbar Syah Fauzan Putra Portfolio",
     locale: "en_US",

@@ -115,5 +115,5 @@ Every push to `main` executes automatic preview validation and edge deployment:
 
 - **Developer:** Rizal Akbar Syah Fauzan Putra (`RizalSwikey`)
 - **Station:** Malang, East Java, Indonesia (UTC+07:00)
-- **Direct Mail:** [rizalswikey@gmail.com](mailto:rizalswikey@gmail.com)
+- **Email:** [rizalakbarsyah@gmail.com](mailto:rizalakbarsyah@gmail.com)
 - **GitHub:** [@RizalSwikey](https://github.com/RizalSwikey)

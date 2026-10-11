@@ -92,8 +92,8 @@ export const portfolioData: PortfolioData = {
   profile: {
     fullName: "Rizal Akbar Syah Fauzan Putra",
     handle: "RizalSwikey",
-    headline: "Human-Centered Design × Rigorous QA × Precision Engineering",
-    status: "Available for high-impact software engineering & product design roles",
+    headline: "Software Engineer & Product Designer",
+    status: "Available for software engineering & product design opportunities",
     location: {
       base: "Malang / Jakarta, Indonesia",
       timezone: "Asia/Jakarta (UTC+07:00)",
@@ -113,7 +113,7 @@ export const portfolioData: PortfolioData = {
       },
     },
     links: {
-      email: "mailto:rizalswikey@gmail.com",
+      email: "mailto:rizalakbarsyah@gmail.com",
       github: "https://github.com/RizalSwikey",
       linkedin: "https://www.linkedin.com/in/rizal-akbar-s-f-707a01219/",
       vercel: "https://vercel.com/rizalswikey",

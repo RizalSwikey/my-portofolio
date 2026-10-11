@@ -26,15 +26,15 @@ export function Footer() {
           {/* Station Coordinates */}
           <div className="md:col-span-5 space-y-3">
             <span className="text-archive-parchment font-bold tracking-wider block">
-              [ARCHIVAL COLOPHON & WORKSTATION]
+              [PORTFOLIO COLOPHON]
             </span>
             <p className="font-sans text-archive-muted text-xs leading-relaxed">
-              Curated and coded by Rizal Akbar Syah Fauzan Putra. Built with Next.js 15 App Router, TypeScript, and Tailwind CSS. Typeset in Newsreader and JetBrains Mono. Deployed with sub-second ISR caching to the Vercel Edge Network.
+              Designed and developed by Rizal Akbar Syah Fauzan Putra. Built with Next.js 15, TypeScript, and Tailwind CSS. Deployed on the Vercel Edge Network.
             </p>
             <div className="flex items-center gap-2 text-archive-subtle text-[11px] pt-1">
               <Compass className="h-3.5 w-3.5 text-archive-rust" />
               <span>
-                STATION: MALANG, ID (7.9666° S, 112.6326° E) [UTC+07:00]
+                LOCATION: MALANG, INDONESIA [UTC+07:00]
               </span>
             </div>
           </div>
@@ -42,27 +42,27 @@ export function Footer() {
           {/* Directory Navigation */}
           <div className="md:col-span-3 space-y-2">
             <span className="text-archive-parchment font-bold tracking-wider block">
-              [INDEX DIRECTORY]
+              [NAVIGATION]
             </span>
             <ul className="space-y-1.5 text-[11px]">
               <li>
                 <a href="#hero" className="hover:text-archive-parchment transition-colors">
-                  01. PROFILE MANIFESTO
+                  01. ABOUT
                 </a>
               </li>
               <li>
                 <a href="#exhibition" className="hover:text-archive-parchment transition-colors">
-                  02. ARTIFACT EXHIBITION
+                  02. PROJECTS
                 </a>
               </li>
               <li>
                 <a href="#matrix" className="hover:text-archive-parchment transition-colors">
-                  03. TECHNICAL CAPABILITIES
+                  03. SKILLS
                 </a>
               </li>
               <li>
                 <a href="#timeline" className="hover:text-archive-parchment transition-colors">
-                  04. OPERATIONAL TIMELINE
+                  04. EXPERIENCE
                 </a>
               </li>
             </ul>
@@ -71,7 +71,7 @@ export function Footer() {
           {/* Transmission Channels */}
           <div className="md:col-span-4 space-y-2">
             <span className="text-archive-parchment font-bold tracking-wider block">
-              [VERIFIED TRANSMISSIONS]
+              [CONTACT & PROFILES]
             </span>
             <div className="space-y-2 text-[11px]">
               <a
@@ -106,7 +106,7 @@ export function Footer() {
               >
                 <div className="flex items-center gap-2">
                   <Mail className="h-3.5 w-3.5 text-archive-rust" />
-                  <span>rizalswikey@gmail.com</span>
+                  <span>rizalakbarsyah@gmail.com</span>
                 </div>
                 <ArrowUpRight className="h-3 w-3 text-archive-subtle" />
               </a>

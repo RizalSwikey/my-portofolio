@@ -57,16 +57,16 @@ export function TechnicalMatrix() {
           <div>
             <div className="inline-flex items-center gap-2 border border-archive-border bg-archive-panel px-2.5 py-1 text-xs font-mono text-archive-rust mb-3">
               <span className="h-1.5 w-1.5 bg-archive-rust"></span>
-              SECTION 03 // TECHNICAL CAPABILITIES MATRIX
+              SKILLS & EXPERTISE
             </div>
             <h2 className="font-editorial text-3xl sm:text-5xl font-normal text-archive-parchment">
-              Verified Technical Runtimes
+              Technical Skills & Competencies
             </h2>
           </div>
           <div className="font-mono text-xs text-archive-muted text-right">
-            <span>TAXONOMY: HIGH-DENSITY GRID</span>
+            <span>FRONTEND, BACKEND & TESTING</span>
             <br />
-            <span className="text-archive-subtle">PROVEN PRODUCTION PROFICIENCIES</span>
+            <span className="text-archive-subtle">LANGUAGES, FRAMEWORKS & DATABASES</span>
           </div>
         </div>
 
@@ -137,7 +137,7 @@ export function TechnicalMatrix() {
             <div className="flex items-center gap-2">
               <Award className="h-4 w-4 text-archive-rust" />
               <h3 className="font-editorial text-lg text-archive-parchment">
-                Verified Credentials & Certifications
+                Certifications & Credentials
               </h3>
             </div>
             <span className="font-mono text-xs text-archive-subtle">[CERT_05]</span>
