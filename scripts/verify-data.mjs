@@ -6,6 +6,7 @@ const data = JSON.parse(raw);
 
 assert.strictEqual(data.profile.fullName, "Rizal Akbar Syah Fauzan Putra");
 assert.strictEqual(data.profile.handle, "RizalSwikey");
+assert.strictEqual(data.profile.links.linkedin, "https://www.linkedin.com/in/rizal-akbar-s-f-707a01219/");
 assert.strictEqual(data.profile.location.coordinates.lat, -7.9666);
 assert.strictEqual(data.profile.location.coordinates.lng, 112.6326);
 assert.strictEqual(data.projects.length, 3);

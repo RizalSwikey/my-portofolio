@@ -95,7 +95,7 @@ export function Footer() {
               >
                 <div className="flex items-center gap-2">
                   <LinkedinIcon className="h-3.5 w-3.5 text-archive-rust" />
-                  <span>linkedin.com/in/rizalswikey</span>
+                  <span>linkedin.com/in/rizal-akbar-s-f-707a01219</span>
                 </div>
                 <ArrowUpRight className="h-3 w-3 text-archive-subtle" />
               </a>

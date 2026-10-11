@@ -115,7 +115,7 @@ export const portfolioData: PortfolioData = {
     links: {
       email: "mailto:rizalswikey@gmail.com",
       github: "https://github.com/RizalSwikey",
-      linkedin: "https://linkedin.com/in/rizalswikey",
+      linkedin: "https://www.linkedin.com/in/rizal-akbar-s-f-707a01219/",
       vercel: "https://vercel.com/rizalswikey",
     },
   },
