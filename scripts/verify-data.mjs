@@ -10,10 +10,15 @@ assert.strictEqual(data.profile.links.linkedin, "https://www.linkedin.com/in/riz
 assert.strictEqual(data.profile.links.email, "mailto:rizalakbarsyah@gmail.com");
 assert.strictEqual(data.profile.location.coordinates.lat, -7.9666);
 assert.strictEqual(data.profile.location.coordinates.lng, 112.6326);
-assert.strictEqual(data.projects.length, 3);
+assert.strictEqual(data.projects.length, 4);
 
 const projectIds = data.projects.map((p) => p.id);
-assert.deepStrictEqual(projectIds, ["kaca-putih", "initia-mate", "umkm-accounting"]);
+assert.deepStrictEqual(projectIds, [
+  "kaca-putih",
+  "concert-tickets-project",
+  "initia-mate",
+  "umkm-accounting",
+]);
 
 const expCompanies = data.experienceHistory.map((e) => e.company);
 assert.ok(expCompanies.some((c) => c.includes("Diskominfo")));

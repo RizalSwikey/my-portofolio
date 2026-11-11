@@ -11,6 +11,9 @@ import {
   CheckCircle2,
   Cpu,
   ShieldAlert,
+  Ticket,
+  ShieldCheck,
+  Zap,
 } from "lucide-react";
 import { GithubIcon } from "@/components/Icons";
 
@@ -18,6 +21,7 @@ export function ProjectExhibition() {
   const { projects } = portfolioData;
 
   const kacaPutih = projects.find((p) => p.id === "kaca-putih")!;
+  const concertTickets = projects.find((p) => p.id === "concert-tickets-project")!;
   const initiaMate = projects.find((p) => p.id === "initia-mate")!;
   const umkmAccounting = projects.find((p) => p.id === "umkm-accounting")!;
 
@@ -36,7 +40,7 @@ export function ProjectExhibition() {
             </h2>
           </div>
           <div className="font-mono text-xs text-archive-muted text-right">
-            <span>3 SELECTED WORKS</span>
+            <span>4 SELECTED WORKS</span>
             <br />
             <span className="text-archive-subtle">2024 – PRESENT</span>
           </div>
@@ -159,7 +163,7 @@ export function ProjectExhibition() {
           </div>
         </motion.div>
 
-        {/* Project 02: initia-mate (Terminal-Grade Precision) */}
+        {/* Project 02: Concert Seat Reservation (Anti Double-Booking Engine) */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -172,6 +176,154 @@ export function ProjectExhibition() {
             <div className="flex items-center gap-2">
               <span className="text-archive-rust font-bold">PROJECT 02</span>
               <span>//</span>
+              <span className="uppercase text-archive-parchment">{concertTickets.archetype}</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span>LOC: {concertTickets.location}</span>
+              <span className="text-archive-subtle">|</span>
+              <span className="text-archive-beacon font-medium">CONCURRENCY: 0% DOUBLE-BOOKING</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 lg:p-8 items-center">
+            {/* Concurrency & Seat Matrix Preview Panel */}
+            <div className="lg:col-span-6 font-mono text-xs space-y-3">
+              <div className="border border-archive-border bg-[#0B0B0C] p-4 shadow-xl">
+                {/* Header */}
+                <div className="flex items-center justify-between border-b border-archive-border/60 pb-2 mb-3 text-[11px] text-archive-muted">
+                  <div className="flex items-center gap-1.5">
+                    <Ticket className="h-3.5 w-3.5 text-archive-rust" />
+                    <span className="text-archive-parchment font-bold">SEAT ALLOCATION ENGINE</span>
+                  </div>
+                  <span className="text-archive-beacon font-semibold">ATOMIC ISOLATION</span>
+                </div>
+
+                {/* Simulated Stage & Seat Allocation Matrix */}
+                <div className="space-y-2 text-[11px]">
+                  <div className="text-center py-1 border border-archive-border/40 bg-archive-obsidian text-[10px] text-archive-subtle uppercase tracking-widest">
+                    [ STAGE / SOUNDBOOTH FRONT ]
+                  </div>
+
+                  {/* Seat Row Visualizer */}
+                  <div className="grid grid-cols-4 gap-1.5 py-1 text-center text-[10px]">
+                    <div className="border border-archive-beacon/50 bg-archive-beacon/10 text-archive-beacon py-1 px-1">
+                      VIP-A1 <span className="block text-[8px] opacity-75">CONFIRMED</span>
+                    </div>
+                    <div className="border border-yellow-500/50 bg-yellow-500/10 text-yellow-400 py-1 px-1">
+                      VIP-A2 <span className="block text-[8px] opacity-75">HELD 08:42</span>
+                    </div>
+                    <div className="border border-archive-rust/50 bg-archive-rust/10 text-archive-rust py-1 px-1">
+                      VIP-A3 <span className="block text-[8px] opacity-75">409 CONFLICT</span>
+                    </div>
+                    <div className="border border-archive-border bg-archive-obsidian text-archive-muted py-1 px-1">
+                      VIP-A4 <span className="block text-[8px] opacity-75">AVAILABLE</span>
+                    </div>
+                  </div>
+
+                  {/* Telemetry Log */}
+                  <div className="border-t border-archive-border/60 pt-2 mt-2 space-y-1 text-[10px]">
+                    <div className="flex items-center justify-between text-archive-muted">
+                      <span>LOCK METHOD:</span>
+                      <span className="text-archive-parchment font-semibold">ATOMIC findOneAndUpdate</span>
+                    </div>
+                    <div className="flex items-center justify-between text-archive-muted">
+                      <span>TTL STRATEGY:</span>
+                      <span className="text-archive-parchment font-semibold">10-MIN LAZY EVALUATION</span>
+                    </div>
+                    <div className="flex items-center justify-between text-archive-beacon font-semibold">
+                      <span>RACE ARBITRATION:</span>
+                      <span>100% ISOLATED (SUB-50ms)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Verified Metrics Badge */}
+              <div className="grid grid-cols-2 gap-3 font-mono text-xs">
+                <div className="border border-archive-border bg-archive-obsidian/70 p-3">
+                  <div className="flex items-center gap-1.5 text-archive-beacon mb-1">
+                    <ShieldCheck className="h-3.5 w-3.5" />
+                    <span className="font-bold">INTEGRITY</span>
+                  </div>
+                  <span className="text-archive-parchment font-semibold">Zero Double-Booking</span>
+                  <p className="text-[10px] text-archive-muted mt-0.5">Atomic write locks</p>
+                </div>
+                <div className="border border-archive-border bg-archive-obsidian/70 p-3">
+                  <div className="flex items-center gap-1.5 text-archive-rust mb-1">
+                    <Zap className="h-3.5 w-3.5" />
+                    <span className="font-bold">THROUGHPUT</span>
+                  </div>
+                  <span className="text-archive-parchment font-semibold">Sub-50ms Lock</span>
+                  <p className="text-[10px] text-archive-muted mt-0.5">High-traffic surges</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Context & Description */}
+            <div className="lg:col-span-6 space-y-5">
+              <div>
+                <h3 className="font-editorial text-2xl sm:text-3xl text-archive-parchment font-normal mb-2">
+                  {concertTickets.name}
+                </h3>
+                <p className="font-mono text-xs text-archive-rust mb-4">
+                  {concertTickets.category} — Anti Double-Booking Engine
+                </p>
+                <p className="text-archive-muted text-sm sm:text-base leading-relaxed">
+                  {concertTickets.summary} Features an interactive multi-client race simulation lab, atomic document locking, and dark-stage Dala visual tokens for seamless seat selection during ticket drops.
+                </p>
+              </div>
+
+              {/* Stack Pills */}
+              <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
+                <span className="text-archive-subtle mr-1 text-[11px]">STACK:</span>
+                {concertTickets.stack.map((item) => (
+                  <span
+                    key={item}
+                    className="border border-archive-border bg-archive-obsidian px-2.5 py-1 text-archive-parchment"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              {/* Live Links */}
+              <div className="flex flex-wrap items-center gap-4 pt-2 font-mono text-xs">
+                <a
+                  href={concertTickets.links.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-archive-rust bg-archive-rust px-4 py-2.5 text-white hover:bg-archive-rust/90 transition-colors shadow-sm"
+                >
+                  <Ticket className="h-3.5 w-3.5" />
+                  <span>VIEW LIVE APP</span>
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+                <a
+                  href={concertTickets.links.repository}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-archive-border bg-archive-obsidian px-4 py-2.5 text-archive-parchment hover:border-archive-parchment/40 transition-colors"
+                >
+                  <GithubIcon className="h-4 w-4 text-archive-muted" />
+                  <span>SOURCE CODE</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Project 03: initia-mate (Terminal-Grade Precision) */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16 border border-archive-border bg-archive-panel overflow-hidden"
+        >
+          {/* Top Archival Ribbon */}
+          <div className="flex flex-wrap items-center justify-between border-b border-archive-border bg-archive-surface px-4 py-2 font-mono text-xs text-archive-muted">
+            <div className="flex items-center gap-2">
+              <span className="text-archive-rust font-bold">PROJECT 03</span>
               <span className="uppercase text-archive-parchment">{initiaMate.archetype}</span>
             </div>
             <div className="flex items-center gap-3">
@@ -275,7 +427,7 @@ export function ProjectExhibition() {
           </div>
         </motion.div>
 
-        {/* Project 03: UMKM Accounting (Data Ledger & Computation) */}
+        {/* Project 04: UMKM Accounting (Data Ledger & Computation) */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -286,7 +438,7 @@ export function ProjectExhibition() {
           {/* Top Archival Ribbon */}
           <div className="flex flex-wrap items-center justify-between border-b border-archive-border bg-archive-surface px-4 py-2 font-mono text-xs text-archive-muted">
             <div className="flex items-center gap-2">
-              <span className="text-archive-rust font-bold">PROJECT 03</span>
+              <span className="text-archive-rust font-bold">PROJECT 04</span>
               <span>//</span>
               <span className="uppercase text-archive-parchment">{umkmAccounting.archetype}</span>
             </div>

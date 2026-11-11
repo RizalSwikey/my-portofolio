@@ -211,8 +211,26 @@ export const portfolioData: PortfolioData = {
         delivery: "Edge-optimized static + dynamic ISR",
       },
       links: {
-        live: "https://kacaputih.vercel.app",
-        repository: "https://github.com/RizalSwikey/kaca-putih",
+        live: "https://kaca-putih-cafe.vercel.app",
+        repository: "https://github.com/RizalSwikey/kaca-putih-cafe",
+      },
+    },
+    {
+      id: "concert-tickets-project",
+      name: "Concert Ticket & Seat Reservation Platform",
+      category: "High-Concurrency Cloud Architecture",
+      archetype: "Anti Double-Booking Engine",
+      summary:
+        "High-concurrency concert ticket and seat reservation engine built with atomic document-level locking and lazy TTL evaluation to eliminate race conditions and guarantee zero double-booking during traffic spikes.",
+      stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Vercel"],
+      location: "Global / Remote",
+      metrics: {
+        concurrency: "0% Race Condition / Zero Double-Booking",
+        locking: "Atomic document locking with 10-min TTL",
+      },
+      links: {
+        live: "https://concert-ticket-project.vercel.app",
+        repository: "https://github.com/RizalSwikey/concert-ticket-platform",
       },
     },
     {
